@@ -1,0 +1,55 @@
+/* common.css */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-color: #fff;
+  --black-text-color: #000;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+.logo {
+  color: var(--black-text-color);
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+/* Site nav */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.user-link {
+  color: var(--primary-text-color);
+}
+.user-link:hover {
+  color: var(--accent-color);
+}
+
+/* hero */
+.hero .hero-title {
+  color: var(--primary-color);
+  background-color: #2f303a;
+}
+.button {
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+}
+/* section */
+.section-title {
+  color: var(--title-text-color);
+}
+.section-text {
+  color: var(--primary-text-color);
+}
