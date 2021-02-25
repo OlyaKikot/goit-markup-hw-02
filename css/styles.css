@@ -1,55 +1,190 @@
-/* common.css */
+.list { list-style: none;}
+
+.link{text-decoration: none;}
+/*======================= variables =====================*/
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-color: #fff;
-  --black-text-color: #000;
+  --dark-background: #2F303A;
+  --black-color:#000;
+  --main-font: 'Roboto', sans-serif;
+  --second-font: 'Raleway', sans-serif;
 }
 
 body {
-  background-color: var(--primary-color);
   color: var(--primary-text-color);
-}
-.logo {
-  color: var(--black-text-color);
-}
+  font-family: var(--main-font);
+  letter-spacing: 0.03em;
 
-.logo-accent {
-  color: var(--accent-color);
 }
-/* Site nav */
-.site-nav .link {
+/*======================= header =====================*/
+
+.logo{
+  font-family: var(--second-font);
+  color:var(--black-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+ }
+ .logo-accent{
+   color:var(--accent-color);
+ }
+ .header-link{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--title-text-color);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-.site-nav .link.current {
-  color: var(--accent-color);
-}
-.user-link {
-  color: var(--primary-text-color);
-}
-.user-link:hover {
+ }
+ .header-link:hover,
+ .header-link:focus {
   color: var(--accent-color);
 }
 
-/* hero */
-.hero .hero-title {
-  color: var(--primary-color);
-  background-color: #2f303a;
+.current{  
+  color: var(--accent-color);
+  }
+.header-contacts{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color:var(--primary-text-color);
+ 
 }
-.button {
+.header-contacts:hover,
+.header-contacts:focus {
+  color: var(--accent-color);
+}
+/*======================= eng header =====================*/
+
+/*======================= hero =====================*/
+.hero{
+  background-color:var(--dark-background);
+}
+.hero-title{
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--primary-color);
+}
+
+.button{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color:var(--primary-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  font-family: inherit}
+  
+/*=======================  end hero =====================*/
+
+
+/*======================= features =====================*/
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color:var(--title-text-color);
+}
+.features-text{
+  font-size: 14px;
+  line-height: 1.71;
+}
+/*======================= end features =====================*/
+
+/*======================= common =====================*/
+.common-title {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.16;
+   text-align: center;
+   color:var(--title-text-color);
+  }
+
+.dark-theme{
+  color:var(--primary-color);
+}
+  /*======================= end =====================*/
+
+
+/*======================= about us =====================*/
+
+/*======================= end about us =====================*/
+/*======================= team =====================*/
+
+.team-title{
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.18;
+   text-align: center;
+   color:var(--title-text-color);
+}
+.team-text{
+  font-size: 16px;
+   line-height: 1.18;
+   text-align: center;
+}
+
+/*======================= end team =====================*/
+
+/*======================= footer =====================*/
+.footer{ 
+  background-color: var(--dark-background);
+}
+
+.footer-contacts{
+  font-size: 14px;
+   line-height: 1.71;
+   color:var(--primary-color);
+   font-style: normal;
+}
+.footer-contacts-transparency{
+    font-size: 14px;
+   line-height: 1.71;
+   color: rgba(255, 255, 255, 0.6);
+   font-style: normal;
+
+}
+/*======================= end footer =====================*/
+
+
+/*======================= portfolio =====================*/
+.portfolio-button{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--title-text-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus{ color:var(--primary-color);
   background-color: var(--accent-color);
 }
-/* section */
-.section-title {
+
+.portfolio-title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--title-text-color);
-}
-.section-text {
-  color: var(--primary-text-color);
-}
+  }
+
+  .portfolio-text{ 
+   font-size: 16px;
+   line-height: 1.87;
+   color:var(--primary-text-color);
+ 
+/*======================= end portfolio =====================*/
